@@ -1,0 +1,12 @@
+# GLOBAL
+**/venv
+**/node_modules
+**/.env
+
+# PUBLISHER
+publisher/captured/*.jpg
+publisher/models/yolov8s.pt
+publisher/models/yolov8l.pt
+
+# SUBSCRIBER
+subscriber/captured/*.jpg
