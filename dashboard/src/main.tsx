@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { NextUIProvider } from '@nextui-org/react';
-// import { gradientLeft, gradientRight } from './assets/images';
+import { gradientLeft, gradientRight } from './assets/images';
 import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <NextUIProvider>
-      <main className="dark text-foreground bg-background min-h-screen">
+      <main className="min-h-screen dark text-foreground bg-background">
         <App />
-        {/* <div className="fixed hidden dark:md:block dark:opacity-100 -bottom-[40%] -left-[20%] z-0">
+
+        <div className="fixed hidden dark:md:block dark:opacity-100 -bottom-[40%] -left-[20%] z-0">
           <img
             src={gradientLeft}
             className="relative shadow-black/5 opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
@@ -23,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             className="relative shadow-black/5 opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
             alt="Right Gradient Background"
           />
-        </div> */}
+        </div>
       </main>
     </NextUIProvider>
   </React.StrictMode>
